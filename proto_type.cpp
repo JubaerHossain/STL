@@ -11,6 +11,8 @@ int main()
     vector<int>::iterator it;
     // sorting the vector
     sort(v.begin(), v.end());
+    // descending order
+    reverse(v.begin(), v.end());
     // printing the vector
     for(it = v.begin(); it != v.end(); it++)
     {
