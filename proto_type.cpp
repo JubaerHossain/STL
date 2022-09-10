@@ -7,23 +7,14 @@ using namespace std;
 
 int main()
 {
-    vector<int> v;
+    vector<int> v = {60, 20, 40, 30, 50};
     vector<int>::iterator it;
-    v.push_back(10);
-    v.push_back(20);
-    v.push_back(30);
-    v.push_back(40);
-    v.push_back(50);
-    v.push_back(60);
-
-
+    // sorting the vector
+    sort(v.begin(), v.end());
+    // printing the vector
     for(it = v.begin(); it != v.end(); it++)
     {
-        cout << *it <<endl;
+        cout << *it << " ";
     }
-    cout << "v.size() = " << v.size() <<endl;
-    cout << "v.capacity() = " << v.capacity() <<endl;
-    cout << "v.max_size() = " << v.max_size() <<endl;
-    cout << "v.front() = " << v.front() <<endl;
     return 0;
 }
