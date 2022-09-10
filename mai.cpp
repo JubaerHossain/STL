@@ -11,11 +11,19 @@ int main()
     list<int> l;
     l.push_back(1);
 
-    l.push_back(2);
-    l.push_back(3);
+    l.push_back(200);
+    l.push_back(30);
     l.push_back(4);
 
     list<int>::iterator it = l.begin();
+
+    for (it = l.begin(); it != l.end(); it++)
+        cout << *it << " ";
+    l.sort();
+    l.reverse();
+
+    cout << endl;
+
 
     for (it = l.begin(); it != l.end(); it++)
         cout << *it << " ";
