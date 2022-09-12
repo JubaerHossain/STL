@@ -1,6 +1,16 @@
 #STL for c++
 - [Containers](https://cplusplus.com/reference/stl)
-    - [Pair](https://cplusplus.com/reference/utility/pair/pair/)
-        - `pair contain both string and integer types`
-        - make_pair()
-        - tuple()
+    - [Set](https://cplusplus.com/reference/set/set/)
+        - `set automatically ascending order and not allow duplicate`
+        - begin()
+        - end()
+        - empty()
+        - size()
+        - max_size()
+        - insert()
+        - erase()
+        - swap()
+        - clear()
+        - emplace()
+        -  find()
+        - cound
