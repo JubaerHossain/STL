@@ -36,14 +36,20 @@ int main()
         cout << *it << " ";
     cout << endl;
     // find the target number
-    it = find(l.begin(), l.end(), 30);
+    it = find(l.begin(), l.end(), 300);
+    if (it == l.end()){
+        cout << "not found" << endl;
+    }
+    else{
+        cout << "found at :" << *it << endl;
+    }
 
-    cout << *it << endl;
 
     cout << endl;
 
     // delete the target number
    
+    it = find(l.begin(), l.end(), 30);
     l.erase(it);
 
     for ( it = l.begin(); it != l.end(); it++ )
