@@ -1,6 +1,14 @@
 #STL for c++
 - [Containers](https://cplusplus.com/reference/stl)
-    - [Pair](https://cplusplus.com/reference/utility/pair/pair/)
-        - `pair contain both string and integer types`
-        - make_pair()
-        - tuple()
+    - [Map](https://cplusplus.com/reference/map/map)
+        - `map contain both string and integer types`
+        - begin()
+        - end()
+        - empty()
+        - max_size()
+        - insert()
+        - erase()
+        - swap()
+        - clear()
+        - emplace()
+        - find() `map.find('b')`
