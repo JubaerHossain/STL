@@ -1,2 +1,13 @@
 #STL for c++
 - [Containers](https://cplusplus.com/reference/stl)
+- [Map](https://cplusplus.com/reference/map/map)
+        - begin()
+        - end()
+        - empty()
+        - max_size()
+        - insert()
+        - erase()
+        - swap()
+        - clear()
+        - emplace()
+        - find() `map.find('b')`
