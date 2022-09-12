@@ -13,4 +13,4 @@
         - clear()
         - emplace()
         -  find()
-        - cound
+        - count()
