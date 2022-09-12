@@ -22,5 +22,20 @@ int main()
 
     cout << p2.first << " " << p2.second << endl;
 
+    // use of pair in vector
+
+    vector<pair<int, string>> v;
+
+    v.push_back(make_pair(1, "Hello"));
+    v.push_back(make_pair(2, "World"));
+    v.push_back(make_pair(3, "C++"));
+
+
+
+    for (auto x : v)
+    {
+        cout << x.first << " => " << x.second << endl;
+    }
+
       return 0;
 }
