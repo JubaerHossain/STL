@@ -34,6 +34,12 @@ int main()
 
     for ( it = l.begin(); it != l.end(); it++ )
         cout << *it << " ";
+    cout << endl;
+    // find the target number
+    it = find(l.begin(), l.end(), 30);
+
+    cout << *it << endl;
+
     
 
     return 0;
