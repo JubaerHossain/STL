@@ -1,41 +1,31 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <utility>
 #include <cmath>
-using namespace std;
+#include <set>
+using namespace std; 
 
 int main()
 {
-    pair<string, int> p;
 
-    p.first = "Hello";
-    p.second = 10;
+    set<int> s;
+    set<int>::iterator it;
 
-    cout << p.first << " " << p.second << endl;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(5);
 
-    // pair of pairs
+    cout << s.size() << endl;
 
-    pair<string, int> p2;
-
-    p2 = make_pair("Hello", 10);
-
-    cout << p2.first << " " << p2.second << endl;
-
-    // use of pair in vector
-
-    vector<pair<int, string>> v;
-
-    v.push_back(make_pair(1, "Hello"));
-    v.push_back(make_pair(2, "World"));
-    v.push_back(make_pair(3, "C++"));
+    cout << "s contains: " << endl;
 
 
-
-    for (auto x : v)
+    for (it = s.begin(); it != s.end(); it++)
     {
-        cout << x.first << " => " << x.second << endl;
+        cout << *it << endl;
     }
-
-      return 0;
+    
+    return 0;
 }
