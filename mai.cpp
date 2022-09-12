@@ -40,6 +40,15 @@ int main()
 
     cout << *it << endl;
 
+    cout << endl;
+
+    // delete the target number
+   
+    l.erase(it);
+
+    for ( it = l.begin(); it != l.end(); it++ )
+        cout << *it << " ";
+
     
 
     return 0;
