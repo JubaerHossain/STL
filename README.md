@@ -1,6 +1,5 @@
 #STL for c++
-
--1. Vector [`https://cplusplus.com/reference/vector/vector/`]
+- [Vector(https://cplusplus.com/reference/vector/vector)]
     - push_back()
     - find() #include<algorithm>
     - reverse()
