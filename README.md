@@ -1,15 +1,28 @@
 #STL for c++
-
--1. Vector [`https://cplusplus.com/reference/vector/vector/`]
-    - push_back()
-    - find() #include<algorithm>
-    - reverse()
-    - clear()
-    - sort() #include<algorithm>
-    - erase()
-    - assign()
-    - pop_back()
-    - insert()
-    - swap()
-    - emplace()
-    - emplace_back()
+- [Containers](https://cplusplus.com/reference/stl)
+    - [List](https://cplusplus.com/reference/list/list)
+        - front()
+        - back()
+        - push_front()
+        - push_back()
+        - pop_front()
+        - pop_back()
+        - list::begin()
+        - list::end()
+        - list::size()
+        - list::empty()
+        - assign()
+        - emplace_front()
+        - emplace_back()
+        - emplace()
+        - insert()
+        - swap()
+        - clear()
+        - sort `#include <algorithm>`
+        - find() `#include <algorithm>`
+        - reverse()
+        - erase()
+        - unique()
+        - merge()
+        - splice()
+        - remove()
