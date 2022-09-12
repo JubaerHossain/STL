@@ -1,10 +1,10 @@
 #STL for c++
 - [Vector](https://cplusplus.com/reference/vector/vector)
     - push_back()
-    - find() #include<algorithm>
+    - find() `#include<algorithm>`
     - reverse()
     - clear()
-    - sort() #include<algorithm>
+    - sort() `#include<algorithm>`
     - erase()
     - assign()
     - pop_back()
