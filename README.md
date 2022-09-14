@@ -60,3 +60,17 @@
         - clear()
         - emplace()
         - find() `map.find('b')`
+    - [Set](https://cplusplus.com/reference/set/set/)
+        - `set automatically ascending order and not allow duplicate`
+        - begin()
+        - end()
+        - empty()
+        - size()
+        - max_size()
+        - insert()
+        - erase()
+        - swap()
+        - clear()
+        - emplace()
+        -  find()
+        - count()
