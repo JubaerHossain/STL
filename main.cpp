@@ -77,6 +77,21 @@ int main()
         cout << *it << endl;
     }
 
+    // insert
+
+    for (int i = 0; i < 5; i++)
+    {
+        d1.insert(d1.begin(), "insert" + to_string(i));
+    }
+
+    cout <<"\n" << endl;
+
+    for (it = d1.begin(); it != d1.end(); it++)
+    {
+        cout << *it << endl;
+    }
+    
+
 
 
     return 0;
