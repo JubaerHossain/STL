@@ -1,62 +1,83 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
-#include <cmath>
-#include <map>
+#include <algorithm>
+#include <deque>
+#include <iterator>
+#include <string>
 using namespace std; 
 
 int main()
 {
-    
-    map<string, int> m;
+    deque<string> d;
 
 
-    m["a"] = 21; // map do not allow duplicate keys
-    m["c"] = 33; // map do ascending order by default with respect to keys
-    m["b"] = 2;
-    m["d"] = 47;
-    m["e"] = 50;
-    map<string, int>::iterator it;
-    for (it = m.begin(); it != m.end(); it++)
+    d.push_back("one");
+    d.push_back("two");
+    d.push_back("three");
+    d.push_back("four");
+
+    deque<string>::iterator it;
+
+    for (it = d.begin(); it != d.end(); it++)
     {
-        cout << it->first << " " << it->second << endl;
-    }
-    cout << endl;
-
-    // insertion in map
-    pair<string, int> p;
-    p.first = "f";
-    p.second = 100;
-    m.insert(p);
-
-    // another way of insertion in map
-
-    m.insert(make_pair("g", 200));
-
-
-    // another way of insertion in map
-
-    m["h"] = 300;
-
-    for (it = m.begin(); it != m.end(); it++)
-    {
-        cout << it->first << " " << it->second << endl;
-    }
-    cout << endl;
-    
-
-
-    // search in map
-    string key = "h";
-    if (m.count(key) == 0)
-    {
-        cout << key << " is not present" << endl;
-    }
-    else
-    {
-        cout << key << " is present" << endl;
+        cout << *it << endl;
     }
 
-    
+    cout <<"\n" << endl;
+    cout <<"after pop_front \n" << endl;
+
+    d.pop_front();
+
+    for (it = d.begin(); it != d.end(); it++)
+    {
+        cout << *it << endl;
+    }
+    cout <<"\n" << endl;
+    cout <<"after pop_back \n" << endl;
+
+    d.pop_back();
+
+    for (it = d.begin(); it != d.end(); it++)
+    {
+        cout << *it << endl;
+    }
+
+    cout <<"\n" << endl;
+    cout <<"after erase \n" << endl;
+
+    d.erase(d.begin(), d.begin()+1);
+
+    for (it = d.begin(); it != d.end(); it++)
+    {
+        cout << *it << endl;
+    }
+
+    // swap the contents of two deques
+
+    deque<string> d1;
+    d1.swap(d);
+
+    cout <<"\n" << endl;
+    cout <<"after swap \n" << endl;
+
+    for (it = d1.begin(); it != d1.end(); it++)
+    {
+        cout << *it << endl;
+    }
+
+    // clear the deque
+
+    d1.clear();
+
+    cout <<"\n" << endl;
+    cout <<"after clear \n" << endl;
+
+    for (it = d1.begin(); it != d1.end(); it++)
+    {
+        cout << *it << endl;
+    }
+
+
+
     return 0;
 }
