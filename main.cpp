@@ -16,5 +16,19 @@ int main()
     else
         cout << "Not Found" << endl;
 
+
+    //LOWER BOUND
+
+    auto it = lower_bound(v.begin(), v.end(), 5);
+
+    cout << "Lower Bound of 5 is at position " << it - v.begin() << endl;
+
+
+    //UPPER BOUND
+    
+
+    
+
+
     return 0;
 }
