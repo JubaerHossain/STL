@@ -25,7 +25,11 @@ int main()
 
 
     //UPPER BOUND
-    
+
+    auto it2 = upper_bound(v.begin(), v.end(), 5);
+
+    cout << "Upper Bound of 5 is at position " << it2 - v.begin() << endl;
+
 
     
 
