@@ -3,42 +3,30 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {1, 22, 3, 24, 5, 6, 7, 8, 9, 10};
+    unordered_set<int> s;
+    
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
 
-    // binary search
-    bool bsearch = binary_search(v.begin(), v.end(), 58);
-
-    if (bsearch)
-        cout << "Found" << endl;
-    else
-        cout << "Not Found" << endl;
-
-
-    //LOWER BOUND
-
-    auto it = lower_bound(v.begin(), v.end(), 5);
-
-    cout << "Lower Bound of 5 is at position " << it - v.begin() << endl;
-
-
-    //UPPER BOUND
-
-    auto it2 = upper_bound(v.begin(), v.end(), 5);
-
-    cout << "Upper Bound of 5 is at position " << it2 - v.begin() << endl;
-
-
-    //SORT
-
-    sort(v.begin(), v.end());
-
-    for (int x : v)
-        cout << x << " ";
-
+    for (auto it = s.begin(); it != s.end(); it++)
+        cout << *it << " ";
     cout << endl;
 
+    s.erase(2);
+    cout << "After erasing 2" << endl;
+    for (auto it = s.begin(); it != s.end(); it++)
+        cout << *it << " ";
+        cout << endl;
 
-    
+     s.erase(s.begin());
+
+    cout << "After erasing first element" << endl;
+
+    for (auto it = s.begin(); it != s.end(); it++)
+        cout << *it << " ";
+    cout << endl;
 
 
     return 0;
