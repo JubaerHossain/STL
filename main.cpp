@@ -1,57 +1,33 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-using namespace std; 
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-    deque<string> dq;
-    dq.push_back("a");
-    dq.push_back("b");
-    dq.push_back("c");
 
-    for (auto it = dq.begin(); it != dq.end(); ++it)
-        cout << *it << endl;
+    priority_queue<int> pq;
+    pq.push(10);
+    pq.push(40);
+    pq.push(20);
+    pq.push(30);
 
+    cout << endl;
 
-    // pop
-    dq.pop_front();
-    cout << "after front pop" << endl;
-    
-    for (auto it = dq.begin(); it != dq.end(); ++it)
-        cout << *it << endl;
-    dq.pop_back();
+    cout << "print the max element  : " << pq.top() << endl;
+    cout << "after pop of top" << endl;
+    pq.pop();
+    while (!pq.empty())
+    {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+    cout << endl;
+    cout << "print the all element  : " << endl;
 
-    cout << "after back pop" << endl;    
-    for (auto it = dq.begin(); it != dq.end(); ++it)
-        cout << *it << endl;
+    while (!pq.empty())
+    {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
 
-
-    // empty
-
-    if (dq.empty())
-        cout << "dq is empty" << endl;
-    else
-        cout << "dq is not empty" << endl;
-
-    // size
-
-    cout << "dq size is " << dq.size() << endl;
-
-    // clear
-
-    dq.clear();
-
-    if (dq.empty())
-        cout << "dq is empty" << endl;
-    else
-        cout << "dq is not empty" << endl;
-
-
-
-    
-
-    
     return 0;
 }

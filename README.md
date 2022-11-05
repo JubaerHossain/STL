@@ -1,9 +1,2 @@
 #STL for c++
-- [Containers](https://cplusplus.com/reference/stl)
-    - [Stack](https://cplusplus.com/reference/stack/stack/)
-        - empty()
-        - push()
-        - pop()
-        - swap()
-        - top()
-        - size()
+- In the case of the min heap, priority queues are a type of container adaptors, specifically designed such that its first element is always the smallest of the      elements it contains and the rest elements are in increasing order.
