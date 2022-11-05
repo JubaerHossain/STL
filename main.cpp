@@ -16,6 +16,8 @@ int main()
     m["b"] = 2;
     m["d"] = 47;
     m["e"] = 50;
+    m["e"] = 55;
+    cout << "Size of map is " << m.size() << endl;
     map<string, int>::iterator it;
     for (it = m.begin(); it != m.end(); it++)
     {
