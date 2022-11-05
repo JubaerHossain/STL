@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    unordered_multimap<int, int> m;
+    unordered_map<int, int> m;
     m.insert({1, 2});
     m.insert({1, 3});
     m.insert({1, 4});
