@@ -8,12 +8,10 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {1, 3, 2};
-    next_permutation( v.begin(), v.end() );
 
-    for (auto i : v)
-        cout << i << " ";
-    cout << endl;
+  
+  int res =  __builtin_popcount(5);
+    cout << res << endl;
 
 
 
