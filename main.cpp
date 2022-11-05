@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    unordered_multiset<int> s;
+    multiset<int> s;
 
     s.insert(1);
     s.insert(3);
