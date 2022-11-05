@@ -8,15 +8,18 @@ using namespace std;
 int main()
 {
     vector<int> v = {60, 20, 40, 30, 50};
-    vector<int>::iterator it;
-    // sorting the vector
-    sort(v.begin(), v.end());
-    // descending order
-    reverse(v.begin(), v.end());
-    // printing the vector
-    for(it = v.begin(); it != v.end(); it++)
+
+    // Sort the vector in ascending order
+    for (auto  it =  v.begin(); it != v.end(); ++it)
     {
         cout << *it << " ";
     }
+    
+    
+    cout << endl;
+
+    cout << "The minimum element is " << *min_element(v.begin(), v.end()) << endl;
+    cout << "The maximum element is " << *max_element(v.begin(), v.end()) << endl;
+
     return 0;
 }
