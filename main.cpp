@@ -1,64 +1,71 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <cmath>
-#include <map>
-using namespace std; 
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-    
-    map<string, int> m;
 
-
-    m["a"] = 21; // map do not allow duplicate keys
-    m["c"] = 33; // map do ascending order by default with respect to keys
-    m["b"] = 2;
-    m["d"] = 47;
-    m["e"] = 50;
-    m["e"] = 55;
+    unordered_multimap<int, int> m;
+    m.insert({1, 2});
+    m.insert({1, 3});
+    m.insert({1, 4});
+    m.insert({1, 5});
+    m.emplace(1, 6);
     cout << "Size of map is " << m.size() << endl;
     map<string, int>::iterator it;
-    for (it = m.begin(); it != m.end(); it++)
+    for (auto it = m.begin(); it != m.end(); it++)
     {
         cout << it->first << " " << it->second << endl;
     }
     cout << endl;
 
-    // insertion in map
-    pair<string, int> p;
-    p.first = "f";
-    p.second = 100;
-    m.insert(p);
+    cout << "insert using pair" << endl;
+    m.insert(make_pair(2, 3));
+    m.insert(make_pair(2, 3));
 
-    // another way of insertion in map
-
-    m.insert(make_pair("g", 200));
-
-
-    // another way of insertion in map
-
-    m["h"] = 300;
-
-    for (it = m.begin(); it != m.end(); it++)
+    for (auto it = m.begin(); it != m.end(); it++)
     {
         cout << it->first << " " << it->second << endl;
     }
-    cout << endl;
-    
 
-
-    // search in map
-    string key = "h";
-    if (m.count(key) == 0)
+    // find the element
+    if (m.find(1) != m.end())
     {
-        cout << key << " is not present" << endl;
+        cout << "Found" << endl;
     }
     else
     {
-        cout << key << " is present" << endl;
+        cout << "Not Found" << endl;
     }
 
-    
+    // erase the element
+    cout << "Erase the element" << endl;
+    m.erase(m.begin());
+    for (auto it = m.begin(); it != m.end(); it++)
+    {
+        cout << it->first << " " << it->second << endl;
+    }
+    // erase the all index of element
+    cout << "erase the all index of element" << endl;
+    m.erase(2);
+    for (auto it = m.begin(); it != m.end(); it++)
+    {
+        cout << it->first << " " << it->second << endl;
+    }
+
+    // empty the map
+    cout << "empty the map" << endl;
+    m.clear();
+    cout << "Size of map is " << m.size() << endl;
+
+    // empty check
+    if (m.empty())
+    {
+        cout << "Map is empty" << endl;
+    }
+    else
+    {
+        cout << "Map is not empty" << endl;
+    }
+
     return 0;
 }
