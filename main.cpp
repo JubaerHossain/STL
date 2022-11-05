@@ -18,6 +18,9 @@ int main()
         s.pop();
     }
 
+    // sizeof queue
+    cout << "Size of queue: " << s.size() << endl;
+
     cout << endl;
 
     // back
